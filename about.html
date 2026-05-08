@@ -7,7 +7,7 @@
   <meta name="description" content="The story of Lola Nena, who started cooking for the neighborhood in 1987. Family recipes, love, and community.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,6 +43,7 @@
 
   <!-- ===== PAGE HEADER ===== -->
   <div class="page-header">
+    <div class="page-header__bg" aria-hidden="true"></div>
     <div class="container page-header__inner">
       <span class="section-label" style="color: rgba(255,200,130,0.85);">Ang Aming Kwento</span>
       <h1>About Us</h1>
@@ -56,16 +57,20 @@
       <div class="story__inner">
         <div class="story__visual fade-in">
           <div class="story__img">
-            <span class="story__img-deco" aria-hidden="true">L</span>
+            <img
+              src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=75"
+              alt="Traditional Filipino clay pot cooking over wood fire"
+              loading="lazy"
+              width="800"
+              height="1067"
+            >
           </div>
-          <div class="story__img-tag">
-            "Kain na, anak — nandito na ang pagkain."
-          </div>
+          <p class="story__img-caption">Sampaguita Street, Tungkong Mangga — since 1987.</p>
         </div>
         <div class="story__content">
           <span class="section-label fade-in">Since 1987</span>
-          <h2 class="fade-up">The Story of<br><em>Lola Nena</em></h2>
-          <p class="story__body fade-up">In 1987, Estrellita "Nena" Reyes — Lola Nena to everyone who knew her — set up a small clay pot and wood-fire stove in front of her home on Sampaguita Street. She cooked sinigang, adobo, and champorado for her neighbors, charging just enough to cover the ingredients.</p>
+          <h2 class="fade-up">The story of<br><em>Lola Nena.</em></h2>
+          <p class="story__body fade-up">In 1987, Estrellita "Nena" Reyes set up a small clay pot and wood-fire stove in front of her home on Sampaguita Street. She cooked sinigang, adobo, and champorado for her neighbors, charging just enough to cover the ingredients.</p>
           <p class="story__body fade-up">Word spread fast. By the end of that first month, the whole barangay knew about the woman on Sampaguita Street whose food tasted exactly like your lola's. People came not just for the food but for the feeling — the warmth of a kitchen that was always open, a table that always had room.</p>
           <p class="story__body fade-up">Over the decades, Lola Nena's small carinderia grew into a neighborhood institution. Her daughter Ana joined her in the kitchen at 16. Her grandson Kuya Marco learned the recipes by heart before he finished high school. Each generation added their own touch — but nothing changes the core: fresh ingredients, honest cooking, and food made with genuine love.</p>
           <p class="story__body fade-up">Lola Nena still oversees the kitchen today, making sure every pot is seasoned right and every plate goes out with the same care she put into that very first bowl of sinigang in 1987.</p>
@@ -79,27 +84,24 @@
     <div class="container">
       <div class="section-header">
         <span class="section-label fade-in">Ang Pamilya</span>
-        <h2 class="fade-up">Meet the Family</h2>
+        <h2 class="fade-up">Meet the family.</h2>
         <p class="fade-up">Three generations, one kitchen, one purpose.</p>
       </div>
-      <div class="family__grid stagger">
-        <div class="family-card fade-up">
-          <div class="family-card__avatar family-card__avatar--lola">LN</div>
-          <p class="family-card__name">Lola Nena</p>
-          <p class="family-card__role">Founder & Head Cook</p>
-          <p class="family-card__bio">Estrellita "Nena" Reyes started it all in 1987. At 72, she still oversees every pot and checks every plate before it leaves the kitchen. Her sinigang is legendary. Her leche flan makes grown men emotional.</p>
+      <div class="family__list stagger">
+        <div class="family-member fade-up">
+          <p class="family-member__name">Lola Nena</p>
+          <p class="family-member__role">Founder &amp; Head Cook</p>
+          <p class="family-member__bio">Estrellita "Nena" Reyes started it all in 1987. At 72, she still oversees every pot and checks every plate before it leaves the kitchen. Her sinigang is legendary. Her leche flan makes grown men emotional.</p>
         </div>
-        <div class="family-card fade-up">
-          <div class="family-card__avatar family-card__avatar--ana">A</div>
-          <p class="family-card__name">Ana Reyes</p>
-          <p class="family-card__role">Co-Cook & Manager</p>
-          <p class="family-card__bio">Lola Nena's daughter and right hand. Ana learned to cook at 16 and has been running the daily operations for 20 years. She handles the silog meals and introduced halo-halo to the menu in 2003.</p>
+        <div class="family-member fade-up">
+          <p class="family-member__name">Ana Reyes</p>
+          <p class="family-member__role">Co-Cook &amp; Manager</p>
+          <p class="family-member__bio">Lola Nena's daughter and right hand. Ana learned to cook at 16 and has been running the daily operations for 20 years. She handles the silog meals and introduced halo-halo to the menu in 2003.</p>
         </div>
-        <div class="family-card fade-up">
-          <div class="family-card__avatar family-card__avatar--marco">KM</div>
-          <p class="family-card__name">Kuya Marco</p>
-          <p class="family-card__role">Kitchen & Takeout</p>
-          <p class="family-card__bio">Ana's son and Lola Nena's proud grandson. Marco handles takeout orders and helps prep from 5AM. He memorized all 12 of Lola's core recipes at 15, and yes, he cooks adobo as good as the two women will admit.</p>
+        <div class="family-member fade-up">
+          <p class="family-member__name">Kuya Marco</p>
+          <p class="family-member__role">Kitchen &amp; Takeout</p>
+          <p class="family-member__bio">Ana's son and Lola Nena's proud grandson. Marco handles takeout orders and helps prep from 5AM. He memorized all 12 of Lola's core recipes at 15, and yes, he cooks adobo as good as the two women will admit.</p>
         </div>
       </div>
     </div>
@@ -110,24 +112,24 @@
     <div class="container">
       <div class="section-header">
         <span class="section-label fade-in">What We Stand For</span>
-        <h2 class="fade-up">Our Values</h2>
-        <p class="fade-up">The three things that have never changed since 1987.</p>
+        <h2 class="fade-up">Three things that<br>haven't changed.</h2>
+        <p class="fade-up">The same rules since Lola Nena lit that first fire in 1987.</p>
       </div>
-      <div class="values__grid stagger">
-        <div class="value-card fade-up">
-          <p class="value-card__num">01 — Fresh</p>
-          <h3 class="value-card__title">Fresh Every Day</h3>
-          <p class="value-card__text">We buy from the palengke every morning. No frozen ingredients, no shortcuts, no reheated food. If it's not fresh, it doesn't go on the plate — that rule has held since 1987 and it isn't changing.</p>
+      <div class="values__list stagger">
+        <div class="value-item fade-up">
+          <span class="value-item__num">01 — Fresh</span>
+          <h3 class="value-item__title">Fresh Every Day</h3>
+          <p class="value-item__body">We buy from the palengke every morning. No frozen ingredients, no shortcuts, no reheated food. If it's not fresh, it doesn't go on the plate — that rule has held since 1987 and it isn't changing.</p>
         </div>
-        <div class="value-card fade-up">
-          <p class="value-card__num">02 — Homemade</p>
-          <h3 class="value-card__title">Truly Homemade</h3>
-          <p class="value-card__text">Every sauce, every marinade, every serving made from scratch in this kitchen. No commercial mixes, no instant packets. Just recipes handed down by hand, tasted by memory, and adjusted by feel — the real lutong-bahay way.</p>
+        <div class="value-item fade-up">
+          <span class="value-item__num">02 — Homemade</span>
+          <h3 class="value-item__title">Truly Homemade</h3>
+          <p class="value-item__body">Every sauce, every marinade, every serving made from scratch in this kitchen. No commercial mixes, no instant packets. Just recipes handed down by hand, tasted by memory, and adjusted by feel.</p>
         </div>
-        <div class="value-card fade-up">
-          <p class="value-card__num">03 — Community</p>
-          <h3 class="value-card__title">For the Barangay</h3>
-          <p class="value-card__text">This isn't just a restaurant. It's a table for the neighborhood. We price fairly so everyone can eat well, we keep the carinderia open on holidays, and we've never turned away a hungry neighbor. That's the only mission statement Lola Nena ever needed.</p>
+        <div class="value-item fade-up">
+          <span class="value-item__num">03 — Community</span>
+          <h3 class="value-item__title">For the Barangay</h3>
+          <p class="value-item__body">This isn't just a restaurant. It's a table for the neighborhood. We price fairly so everyone can eat well, we keep the carinderia open on holidays, and we've never turned away a hungry neighbor.</p>
         </div>
       </div>
     </div>
@@ -150,7 +152,7 @@
         </a>
       </div>
       <div class="footer__divider"></div>
-      <p class="footer__copy">© 2024 Kusina ni Lola. All rights reserved. Made with ❤️ in Tungkong Mangga, Bulacan.</p>
+      <p class="footer__copy">© 2024 Kusina ni Lola. All rights reserved. Made with love in Tungkong Mangga, Bulacan.</p>
     </div>
   </footer>
 

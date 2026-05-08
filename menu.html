@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu — Kusina ni Lola</title>
-  <meta name="description" content="Daily menu of fresh Filipino home-cooked meals. Breakfast, Silog, Ulam, Desserts & Drinks.">
+  <meta name="description" content="Daily menu of fresh Filipino home-cooked meals. Breakfast, Silog, Ulam, Desserts and Drinks.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,124 +43,213 @@
 
   <!-- ===== PAGE HEADER ===== -->
   <div class="page-header">
+    <div class="page-header__bg" aria-hidden="true"></div>
     <div class="container page-header__inner">
-      <span class="section-label" style="color: rgba(255,200,130,0.85);">Ang Aming Lutuin</span>
-      <h1>Our Menu</h1>
-      <p>Freshly cooked every morning. Available while supplies last.</p>
+      <span class="section-label" style="color: rgba(255,200,130,0.85);">Ang Aming Pagkain</span>
+      <h1>Today's Menu</h1>
+      <p>Everything cooked fresh this morning. Prices may change with the market.</p>
     </div>
   </div>
 
-  <!-- ===== TODAY'S NOTICE ===== -->
+  <!-- ===== MENU NOTICE ===== -->
   <div class="menu-notice">
-    <strong>🔥 Today's Special:</strong> Sinigang na Liempo — ₱185 · Available until sold out
+    <strong>Availability varies daily.</strong> Call ahead for large orders: <a href="tel:09175552187" style="color: inherit; font-weight: 600;">0917-555-2187</a>
   </div>
 
   <!-- ===== MENU ===== -->
-  <div class="menu-page">
+  <section class="menu-page">
     <div class="container">
 
       <!-- BREAKFAST -->
-      <div class="menu-category">
-        <div class="menu-category__header fade-in">
-          <div class="menu-category__icon">🌅</div>
-          <h2 class="menu-category__title">Breakfast</h2>
+      <div class="menu-category fade-up">
+        <div class="menu-category__header">
+          <span class="menu-category__num">I.</span>
+          <h2 class="menu-category__title">Almusal</h2>
+          <div class="menu-category__rule"></div>
         </div>
-        <div class="menu-grid stagger">
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Tapsilog</p>
-            <p class="menu-item__desc">Tender beef tapa marinated overnight in soy and calamansi, served with garlic fried rice and a sunny-side-up egg.</p>
-            <p class="menu-item__price">95</p>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Champorado</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">45</span>
+            </div>
+            <p class="menu-item__desc">Chocolate rice porridge with dried fish on the side. Lola's version uses tablea — rich, dark, and not too sweet.</p>
           </div>
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Longsilog</p>
-            <p class="menu-item__desc">Sweet homemade pork longganisa, sinangag, and itlog. A classic combo Lola's been making since day one.</p>
-            <p class="menu-item__price">85</p>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Arroz Caldo</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">55</span>
+            </div>
+            <p class="menu-item__desc">Ginger-scented rice congee with chicken. Garnished with toasted garlic, spring onion, and calamansi.</p>
           </div>
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Champorado</p>
-            <p class="menu-item__desc">Thick, sweet tablea chocolate rice porridge served warm with crispy dried tuyo on the side.</p>
-            <p class="menu-item__price">65</p>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Goto</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">65</span>
+            </div>
+            <p class="menu-item__desc">Beef tripe congee. Slow-cooked until tender, finished with patis and a squeeze of calamansi.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Pandesal with Itlog</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">35</span>
+            </div>
+            <p class="menu-item__desc">Two fresh pandesal with a fried egg and a cup of Kapeng Barako.</p>
           </div>
         </div>
       </div>
 
-      <!-- SILOG MEALS -->
-      <div class="menu-category">
-        <div class="menu-category__header fade-in">
-          <div class="menu-category__icon">🍳</div>
+      <!-- SILOG -->
+      <div class="menu-category fade-up">
+        <div class="menu-category__header">
+          <span class="menu-category__num">II.</span>
           <h2 class="menu-category__title">Silog Meals</h2>
+          <div class="menu-category__rule"></div>
         </div>
-        <div class="menu-grid stagger">
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Bangsilog</p>
-            <p class="menu-item__desc">Whole crispy fried bangus, garlic rice, and egg. Light yet filling — a perennial Lola's favorite.</p>
-            <p class="menu-item__price">110</p>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Tapsilog</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">95</span>
+            </div>
+            <p class="menu-item__desc">Marinated beef tapa, garlic fried rice, and fried egg. Ana's tapa recipe — tangy, a little sweet.</p>
           </div>
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Cornsilog</p>
-            <p class="menu-item__desc">Ginisang corned beef sautéed with onions and garlic, paired with hot sinangag and itlog.</p>
-            <p class="menu-item__price">80</p>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Longsilog</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">90</span>
+            </div>
+            <p class="menu-item__desc">Homemade pork longganisa, garlic rice, fried egg. Sweet-style longganisa ground fresh in the kitchen.</p>
           </div>
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Tosilog</p>
-            <p class="menu-item__desc">Sweet-cured pork tapa cooked golden-crisp, with garlic rice and a perfectly fried egg.</p>
-            <p class="menu-item__price">90</p>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Bangsilog</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">100</span>
+            </div>
+            <p class="menu-item__desc">Boneless bangus (milkfish) marinated overnight in vinegar and spices, served with garlic rice and egg.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Cornsilog</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">85</span>
+            </div>
+            <p class="menu-item__desc">Corned beef with garlic rice and two eggs. Simple, filling, and always satisfying.</p>
           </div>
         </div>
       </div>
 
       <!-- ULAM -->
-      <div class="menu-category">
-        <div class="menu-category__header fade-in">
-          <div class="menu-category__icon">🍲</div>
+      <div class="menu-category fade-up">
+        <div class="menu-category__header">
+          <span class="menu-category__num">III.</span>
           <h2 class="menu-category__title">Ulam</h2>
+          <div class="menu-category__rule"></div>
         </div>
-        <div class="menu-grid stagger">
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Sinigang na Baboy</p>
-            <p class="menu-item__desc">Slow-simmered pork ribs in tamarind broth with kangkong, sitaw, and labanos. Served with rice.</p>
-            <p class="menu-item__price">160</p>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Sinigang na Baboy</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">120</span>
+            </div>
+            <p class="menu-item__desc">Pork belly and ribs in sampalok broth with kangkong, sitaw, and radish. Lola's most requested dish since 1987.</p>
           </div>
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Adobong Manok</p>
-            <p class="menu-item__desc">Classic chicken adobo braised in soy sauce, vinegar, garlic, and bay leaves until fall-off-the-bone tender.</p>
-            <p class="menu-item__price">140</p>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Adobong Manok</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">110</span>
+            </div>
+            <p class="menu-item__desc">Chicken braised in vinegar, soy sauce, garlic, and bay leaf. Kuya Marco's version — dark and slightly dry-cooked.</p>
           </div>
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Ginisang Ampalaya</p>
-            <p class="menu-item__desc">Sautéed bitter melon with egg, ground pork, and garlic. Lola's go-to healthy ulam, made with care.</p>
-            <p class="menu-item__price">100</p>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Kare-Kare</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">140</span>
+            </div>
+            <p class="menu-item__desc">Oxtail and tripe in peanut sauce with eggplant, banana blossom, and sitaw. Served with bagoong alamang.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Pinakbet</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">95</span>
+            </div>
+            <p class="menu-item__desc">Mixed vegetables — ampalaya, eggplant, squash, sitaw — sauteed in bagoong isda and pork.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Lechon Kawali</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">130</span>
+            </div>
+            <p class="menu-item__desc">Deep-fried pork belly, crispy skin, served with liver sauce and steamed rice.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Monggo Guisado</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">85</span>
+            </div>
+            <p class="menu-item__desc">Mung bean stew with pork bits, spinach, and garlic. Available every Friday.</p>
           </div>
         </div>
       </div>
 
       <!-- DESSERTS & DRINKS -->
-      <div class="menu-category">
-        <div class="menu-category__header fade-in">
-          <div class="menu-category__icon">🍮</div>
-          <h2 class="menu-category__title">Desserts & Drinks</h2>
+      <div class="menu-category fade-up">
+        <div class="menu-category__header">
+          <span class="menu-category__num">IV.</span>
+          <h2 class="menu-category__title">Panghimagas at Inumin</h2>
+          <div class="menu-category__rule"></div>
         </div>
-        <div class="menu-grid stagger">
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Halo-Halo</p>
-            <p class="menu-item__desc">Shaved ice layered with sweet beans, nata de coco, macapuno, leche flan, and a generous scoop of ube ice cream.</p>
-            <p class="menu-item__price">80</p>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Leche Flan</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">55</span>
+            </div>
+            <p class="menu-item__desc">Lola Nena's legendary steamed custard. Made with dayap zest. Has been known to make grown men emotional.</p>
           </div>
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Leche Flan</p>
-            <p class="menu-item__desc">Silky smooth caramel custard made fresh every morning using Lola Nena's original 1987 recipe.</p>
-            <p class="menu-item__price">60</p>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Halo-Halo</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">75</span>
+            </div>
+            <p class="menu-item__desc">Shaved ice with kaong, nata de coco, sweetened banana, leche flan, and ube ice cream. Ana's addition, circa 2003.</p>
           </div>
-          <div class="menu-item fade-up">
-            <p class="menu-item__name">Sago't Gulaman</p>
-            <p class="menu-item__desc">Cold, sweet brown sugar drink with tapioca pearls and jelly cubes. Perfect after a warm ulam.</p>
-            <p class="menu-item__price">35</p>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Kapeng Barako</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">30</span>
+            </div>
+            <p class="menu-item__desc">Strong Batangas coffee served black or with condensed milk.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Calamansi Juice</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">25</span>
+            </div>
+            <p class="menu-item__desc">Fresh-squeezed. Sweetened to taste.</p>
           </div>
         </div>
       </div>
 
     </div>
-  </div>
+  </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
@@ -179,7 +268,7 @@
         </a>
       </div>
       <div class="footer__divider"></div>
-      <p class="footer__copy">© 2024 Kusina ni Lola. All rights reserved. Made with ❤️ in Tungkong Mangga, Bulacan.</p>
+      <p class="footer__copy">© 2024 Kusina ni Lola. All rights reserved. Made with love in Tungkong Mangga, Bulacan.</p>
     </div>
   </footer>
 

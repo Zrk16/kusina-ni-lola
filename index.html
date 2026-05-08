@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kusina ni Lola — Tunay na Lutong-Bahay</title>
-  <meta name="description" content="Fresh, homemade Filipino food served daily in Tungkong Mangga, San Jose del Monte, Bulacan. Family recipes since 1987.">
+  <title>Kusina ni Lola — Lutong-bahay sa Tungkong Mangga, Bulacan</title>
+  <meta name="description" content="Family-run Filipino carinderia in San Jose del Monte, Bulacan. Sinigang, adobo, silog meals, and more — fresh every day since 1987.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,7 +25,7 @@
         <li><a href="about.html" class="nav__link">About</a></li>
         <li><a href="contact.html" class="nav__link">Contact</a></li>
       </ul>
-      <a href="contact.html" class="btn btn--primary nav__cta">Order Now</a>
+      <a href="contact.html" class="btn btn--ghost nav__cta">Order Now</a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -43,15 +43,46 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero__bg"></div>
-    <span class="hero__deco" aria-hidden="true">K</span>
-    <div class="hero__content">
-      <p class="hero__label">📍 Tungkong Mangga, SJDM, Bulacan</p>
-      <h1 class="hero__title">Tunay na<br><em>Lutong-Bahay</em></h1>
-      <p class="hero__sub">Fresh, homemade Filipino food served daily in Tungkong Mangga. Made with love, Lola's recipes passed down since 1987.</p>
-      <div class="hero__cta">
-        <a href="menu.html" class="btn btn--primary btn--lg">See Our Menu</a>
-        <a href="about.html" class="btn btn--ghost btn--lg">Our Story →</a>
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__layout">
+      <div class="hero__left">
+        <p class="hero__label">Tungkong Mangga, Bulacan</p>
+        <h1 class="hero__title">
+          Real <em>lutong-bahay.</em><br>
+          Served every day<br>since 1987.
+        </h1>
+        <p class="hero__sub">Fresh-cooked Filipino food by Lola Nena and family. No shortcuts, no frozen ingredients — just the kind of meal that tastes exactly like your grandmother's.</p>
+        <div class="hero__cta">
+          <a href="menu.html" class="btn btn--primary btn--lg">See the Menu</a>
+          <a href="about.html" class="btn btn--ghost btn--lg">Our Story</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero__board">
+          <span class="hero__board-since">Est. 1987</span>
+          <p style="font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px;">Kusina ni Lola</p>
+          <div class="hero__board-rule"></div>
+          <address>
+            42 Sampaguita Street<br>
+            Tungkong Mangga<br>
+            San Jose del Monte, Bulacan
+          </address>
+          <div class="hero__board-rule"></div>
+          <div class="hero__board-hours">
+            <div class="hero__board-hours-row">
+              <span>Mon – Sat</span>
+              <span>6AM – 8PM</span>
+            </div>
+            <div class="hero__board-hours-row">
+              <span>Sunday</span>
+              <span>6AM – 2PM</span>
+            </div>
+          </div>
+          <a href="tel:09175552187" class="hero__board-phone">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6 6l1.03-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            0917-555-2187
+          </a>
+        </div>
       </div>
     </div>
     <div class="hero__scroll" aria-hidden="true">
@@ -64,24 +95,24 @@
   <section class="features">
     <div class="container">
       <div class="features__header">
-        <span class="section-label fade-in">Bakit Lola's?</span>
-        <h2 class="fade-up">Kain na may <em>puso at pagmamahal</em></h2>
+        <span class="section-label fade-in">Why People Come Back</span>
+        <h2 class="fade-up">Three things that<br>haven't changed.</h2>
       </div>
-      <div class="features__grid stagger">
-        <div class="feature-card fade-up">
-          <div class="feature-card__icon">🌿</div>
-          <h3 class="feature-card__title">Made Fresh Daily</h3>
-          <p class="feature-card__text">Every dish cooked from scratch each morning. No reheated food, no shortcuts — fresh ingredients from the palengke, every single day.</p>
+      <div class="features__list stagger">
+        <div class="feature-row fade-up">
+          <span class="feature-row__num">01</span>
+          <p class="feature-row__title">Fresh Every Morning</p>
+          <p class="feature-row__body">We buy from the palengke before sunrise. Every pot is cooked same-day. Nothing gets reheated, nothing gets frozen — if it's not fresh, it doesn't go on the plate. That rule has held since 1987.</p>
         </div>
-        <div class="feature-card fade-up">
-          <div class="feature-card__icon">📖</div>
-          <h3 class="feature-card__title">Family Recipes Since 1987</h3>
-          <p class="feature-card__text">Lola Nena's original recipes have been in the family for over three decades — the same flavors she cooked for the whole barangay.</p>
+        <div class="feature-row fade-up">
+          <span class="feature-row__num">02</span>
+          <p class="feature-row__title">Recipes by Heart</p>
+          <p class="feature-row__body">Lola Nena's sinigang, adobo, and kare-kare have never been written down. They live in memory, adjusted by taste and instinct — the way real lutong-bahay has always worked. No packet mixes, ever.</p>
         </div>
-        <div class="feature-card fade-up">
-          <div class="feature-card__icon">🏠</div>
-          <h3 class="feature-card__title">Dine-in & Takeout</h3>
-          <p class="feature-card__text">Eat with us in our cozy carinderia, or take your order home. Open Monday–Saturday 6AM–8PM, Sunday until 2PM.</p>
+        <div class="feature-row fade-up">
+          <span class="feature-row__num">03</span>
+          <p class="feature-row__title">A Table for Everyone</p>
+          <p class="feature-row__body">Priced so the whole barangay can eat well. Open on holidays. We've never turned away a hungry neighbor. That's not a policy — it's just who Lola Nena is.</p>
         </div>
       </div>
     </div>
@@ -91,24 +122,27 @@
   <section class="about-teaser">
     <div class="container">
       <div class="about-teaser__inner">
-        <div class="about-teaser__visual fade-in">
-          <div class="about-teaser__visual-bg">
-            <span class="about-teaser__visual-letter" aria-hidden="true">K</span>
-          </div>
-          <div class="about-teaser__badge">
-            <span class="about-teaser__badge-num">37</span>
-            <span class="about-teaser__badge-text">Years of Lutong-Bahay</span>
-          </div>
+
+        <div class="est-card fade-in">
+          <p class="est-card__eyebrow">Carinderia · Bulacan</p>
+          <p class="est-card__year">1987</p>
+          <div class="est-card__rule"></div>
+          <p class="est-card__name">Estrellita "Nena" Reyes</p>
+          <p class="est-card__location">42 Sampaguita Street<br>Tungkong Mangga, SJDM</p>
+          <p class="est-card__tagline">"Kain na, anak."</p>
         </div>
+
         <div class="about-teaser__content">
           <span class="section-label fade-in">Ang Aming Kwento</span>
-          <blockquote class="about-teaser__quote fade-up">
-            "Kapag kumain ka sa aming kusina, parang nasa bahay ka ng iyong lola."
-          </blockquote>
-          <p class="about-teaser__body fade-up">In 1987, Lola Nena started cooking for her neighbors in Tungkong Mangga with nothing but a wood-fire stove and a heart full of love. What began as feeding a few families grew into something the whole barangay came to depend on.</p>
-          <p class="about-teaser__body fade-up">Today, her daughter Ana and grandson Kuya Marco carry on that tradition — the same recipes, the same warmth, the same table open for everyone.</p>
-          <a href="about.html" class="btn btn--outline fade-up">Read Our Story →</a>
+          <h2 class="fade-up">Started with<br>one clay pot.</h2>
+          <div class="quote-block fade-up">
+            <span class="quote-block__mark" aria-hidden="true">"</span>
+            <p class="quote-block__text">Her food tasted exactly like your lola's. People came not just for the food but for the feeling.</p>
+          </div>
+          <p class="about-teaser__body fade-up">In 1987, Lola Nena set up a clay pot and wood-fire stove in front of her home and cooked sinigang for her neighbors. Word spread fast. Three generations later, the carinderia is still there — same street, same recipes, same care.</p>
+          <a href="about.html" class="btn btn--outline fade-up">Read the full story</a>
         </div>
+
       </div>
     </div>
   </section>
@@ -130,7 +164,7 @@
         </a>
       </div>
       <div class="footer__divider"></div>
-      <p class="footer__copy">© 2024 Kusina ni Lola. All rights reserved. Made with ❤️ in Tungkong Mangga, Bulacan.</p>
+      <p class="footer__copy">© 2024 Kusina ni Lola. All rights reserved. Made with love in Tungkong Mangga, Bulacan.</p>
     </div>
   </footer>
 
