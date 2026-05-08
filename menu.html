@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Kusina ni Lola</title>
+  <meta name="description" content="Daily menu of fresh Filipino home-cooked meals. Breakfast, Silog, Ulam, Desserts & Drinks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark">K</span>
+        <span>Kusina ni Lola</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="menu.html" class="nav__link active">Menu</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Order Now</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <ul>
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="menu.html" class="nav__link active">Menu</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <div class="container page-header__inner">
+      <span class="section-label" style="color: rgba(255,200,130,0.85);">Ang Aming Lutuin</span>
+      <h1>Our Menu</h1>
+      <p>Freshly cooked every morning. Available while supplies last.</p>
+    </div>
+  </div>
+
+  <!-- ===== TODAY'S NOTICE ===== -->
+  <div class="menu-notice">
+    <strong>🔥 Today's Special:</strong> Sinigang na Liempo — ₱185 · Available until sold out
+  </div>
+
+  <!-- ===== MENU ===== -->
+  <div class="menu-page">
+    <div class="container">
+
+      <!-- BREAKFAST -->
+      <div class="menu-category">
+        <div class="menu-category__header fade-in">
+          <div class="menu-category__icon">🌅</div>
+          <h2 class="menu-category__title">Breakfast</h2>
+        </div>
+        <div class="menu-grid stagger">
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Tapsilog</p>
+            <p class="menu-item__desc">Tender beef tapa marinated overnight in soy and calamansi, served with garlic fried rice and a sunny-side-up egg.</p>
+            <p class="menu-item__price">95</p>
+          </div>
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Longsilog</p>
+            <p class="menu-item__desc">Sweet homemade pork longganisa, sinangag, and itlog. A classic combo Lola's been making since day one.</p>
+            <p class="menu-item__price">85</p>
+          </div>
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Champorado</p>
+            <p class="menu-item__desc">Thick, sweet tablea chocolate rice porridge served warm with crispy dried tuyo on the side.</p>
+            <p class="menu-item__price">65</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SILOG MEALS -->
+      <div class="menu-category">
+        <div class="menu-category__header fade-in">
+          <div class="menu-category__icon">🍳</div>
+          <h2 class="menu-category__title">Silog Meals</h2>
+        </div>
+        <div class="menu-grid stagger">
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Bangsilog</p>
+            <p class="menu-item__desc">Whole crispy fried bangus, garlic rice, and egg. Light yet filling — a perennial Lola's favorite.</p>
+            <p class="menu-item__price">110</p>
+          </div>
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Cornsilog</p>
+            <p class="menu-item__desc">Ginisang corned beef sautéed with onions and garlic, paired with hot sinangag and itlog.</p>
+            <p class="menu-item__price">80</p>
+          </div>
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Tosilog</p>
+            <p class="menu-item__desc">Sweet-cured pork tapa cooked golden-crisp, with garlic rice and a perfectly fried egg.</p>
+            <p class="menu-item__price">90</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ULAM -->
+      <div class="menu-category">
+        <div class="menu-category__header fade-in">
+          <div class="menu-category__icon">🍲</div>
+          <h2 class="menu-category__title">Ulam</h2>
+        </div>
+        <div class="menu-grid stagger">
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Sinigang na Baboy</p>
+            <p class="menu-item__desc">Slow-simmered pork ribs in tamarind broth with kangkong, sitaw, and labanos. Served with rice.</p>
+            <p class="menu-item__price">160</p>
+          </div>
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Adobong Manok</p>
+            <p class="menu-item__desc">Classic chicken adobo braised in soy sauce, vinegar, garlic, and bay leaves until fall-off-the-bone tender.</p>
+            <p class="menu-item__price">140</p>
+          </div>
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Ginisang Ampalaya</p>
+            <p class="menu-item__desc">Sautéed bitter melon with egg, ground pork, and garlic. Lola's go-to healthy ulam, made with care.</p>
+            <p class="menu-item__price">100</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESSERTS & DRINKS -->
+      <div class="menu-category">
+        <div class="menu-category__header fade-in">
+          <div class="menu-category__icon">🍮</div>
+          <h2 class="menu-category__title">Desserts & Drinks</h2>
+        </div>
+        <div class="menu-grid stagger">
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Halo-Halo</p>
+            <p class="menu-item__desc">Shaved ice layered with sweet beans, nata de coco, macapuno, leche flan, and a generous scoop of ube ice cream.</p>
+            <p class="menu-item__price">80</p>
+          </div>
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Leche Flan</p>
+            <p class="menu-item__desc">Silky smooth caramel custard made fresh every morning using Lola Nena's original 1987 recipe.</p>
+            <p class="menu-item__price">60</p>
+          </div>
+          <div class="menu-item fade-up">
+            <p class="menu-item__name">Sago't Gulaman</p>
+            <p class="menu-item__desc">Cold, sweet brown sugar drink with tapioca pearls and jelly cubes. Perfect after a warm ulam.</p>
+            <p class="menu-item__price">35</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="index.html" class="footer__logo">
+        <span class="nav__logo-mark">K</span>
+        <span>Kusina ni Lola</span>
+      </a>
+      <p class="footer__tagline">Lutong-bahay na panlasa, araw-araw.</p>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+      <div class="footer__divider"></div>
+      <p class="footer__copy">© 2024 Kusina ni Lola. All rights reserved. Made with ❤️ in Tungkong Mangga, Bulacan.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
